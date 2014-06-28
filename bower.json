@@ -1,0 +1,21 @@
+{
+  "name": "Jink",
+  "version": "0.0.1",
+  "authors": [
+    "Arijit Bhattacharya <hoodwink73@live.com>"
+  ],
+  "description": "An easier, jadier Ink",
+  "main": "README.md",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "ink": "~1.0.5",
+    "bower-bourbon": "~3.1.8"
+  }
+}

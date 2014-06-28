@@ -1,0 +1,23 @@
+{
+  "name": "jink",
+  "version": "0.0.1",
+  "description": "",
+  "main": "Gruntfile.js",
+  "dependencies": {
+  },
+  "devDependencies": {
+    "grunt": "~0.4.2",
+    "grunt-contrib-connect": "~0.6.0",
+    "grunt-sass": "~0.10.0",
+    "grunt-contrib-jade": "0.11.0",
+    "grunt-contrib-watch": "~0.5.3",
+    "marked": "~0.3.2",
+    "grunt-premailer": "~0.2.4"
+  },
+  "scripts": {
+    "test": ""
+  },
+  "author": "",
+  "license": "MIT",
+  "private": "true"
+}

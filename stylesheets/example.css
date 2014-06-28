@@ -1,0 +1,178 @@
+.global-wrapper {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  vertical-align: center; }
+
+body, .body {
+  background-color: #f0f1f4;
+  font-family: 'Helvetica', 'Arial', sans-serif;
+  font-size: 16px; }
+
+.container {
+  background-color: #ffffff;
+  border: 1px solid #e4e3eb; }
+
+#subject {
+  padding-top: 20px;
+  padding-bottom: 10px; }
+  #subject .header {
+    font-family: 'Helvetica', 'Arial', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    color: #415567; }
+
+table.row.divider .wrapper {
+  padding-top: 0px; }
+  table.row.divider .wrapper .text-pad-left {
+    padding-left: 20px; }
+
+#message {
+  font-family: 'Helvetica', 'Arial', sans-serif;
+  color: #738190;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 1.5; }
+
+table.row.chat-container td.wrapper {
+  padding-left: 30px; }
+
+#chat-message {
+  font-family: 'Helvetica', 'Arial', sans-serif;
+  color: #738190;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.5;
+  background-color: #fafbfb;
+  padding: 10px; }
+
+table.row.button-container {
+  padding-top: 20px; }
+
+td.wrapper.tweet-meta {
+  padding-left: 30px;
+  padding-right: 10px; }
+  td.wrapper.tweet-meta .columns {
+    width: 50px; }
+
+#avatar {
+  width: 13.7931%; }
+  #avatar img {
+    padding-right: 10px; }
+
+#twitter-user {
+  width: 43.10345%;
+  padding-left: 10px; }
+
+#time {
+  padding-right: 30px; }
+
+td.wrapper.customer-info {
+  padding-left: 30px;
+  padding-right: 30px; }
+
+.username, .handle {
+  text-align: left; }
+
+.username {
+  color: #415567;
+  font-size: 18px; }
+
+.time, .date {
+  color: #738190;
+  text-align: right; }
+
+.handle {
+  color: #738190; }
+
+#helpMessage {
+  color: #c5c3d0;
+  font-size: 12px;
+  padding-bottom: 35px; }
+  #helpMessage a {
+    font-weight: 400;
+    color: #415567; }
+
+.footer {
+  background-color: #fafbfb;
+  border-top: 1px solid #e4e3eb; }
+  .footer td {
+    font-size: 12px;
+    color: #c5c3d0; }
+    .footer td a, .footer td a:visited, .footer td a:hover {
+      color: #c5c3d0 !important; }
+
+table.columns .text-pad, table.column .text-pad {
+  padding-left: 30px;
+  padding-right: 30px; }
+
+hr {
+  color: #e4e3eb;
+  background-color: #e4e3eb; }
+
+table.primary td {
+  background: #00d082;
+  border-color: white; }
+  table.primary td a {
+    font-weight: 400; }
+
+table.button:hover td, table.button:visited td, table.button:active td {
+  background: #00b671 !important; }
+
+.footer td.meta {
+  line-height: 55px;
+  text-align: right;
+  vertical-align: center; }
+
+@media only screen and (max-width: 600px) {
+  .global-wrapper {
+    padding-top: 10px; }
+  table.columns .text-pad, table.column .text-pad {
+    padding-left: 10px;
+    padding-right: 10px; }
+  .footer td.wrapper {
+    padding: 0; }
+  #avatar {
+    width: 20.68966% !important; }
+  #twitter-user {
+    width: 79.31034% !important; }
+  #time {
+    padding-right: 10px; }
+  #time-mobile .time {
+    padding: 0px 10px 0px 30px; }
+  table.row.divider .wrapper {
+    padding-top: 0px; }
+    table.row.divider .wrapper .text-pad-left {
+      padding-left: 10px; }
+  td.wrapper.customer-info {
+    padding-left: 10px; }
+  table.row.chat-container td.wrapper {
+    padding-right: 30px !important; } }
+
+.example-wrapper p, .example-wrapper .example-two-wrapper {
+  font-size: 24px;
+  font-weight: 300;
+  font-family: 'Helvetica Neue';
+  line-height: 1.5; }
+.example-wrapper .image-wrapper, .example-wrapper .example-two-wrapper {
+  padding: 0; }
+.example-wrapper .message, .example-wrapper .example-two-wrapper {
+  margin-top: 20px; }
+.example-wrapper .button-wrapper, .example-wrapper .example-two-wrapper {
+  margin-bottom: 20px; }
+.example-wrapper .button td, .example-wrapper .button .example-two-wrapper {
+  background-color: #525252; }
+  .example-wrapper .button td a, .example-wrapper .button td .example-two-wrapper {
+    font-family: 'Helvetica Neue';
+    font-weight: 300; }
+.example-wrapper .example-two, .example-wrapper .example-two-wrapper {
+  font-size: 16px; }
+.example-wrapper .quote-wrapper, .example-wrapper .example-two-wrapper {
+  padding-top: 30px; }
+.example-wrapper .quote p, .example-wrapper .quote .example-two-wrapper {
+  font-family: Georgia;
+  font-size: 16px; }
+
+.example-two-wrapper p {
+  font-size: 16px; }
+.example-two-wrapper .quote {
+  font-family: Georgia; }

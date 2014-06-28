@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" charset="utf-8">
+    <meta name content="width=device-width">
+    
+    
+    
+    
+    
+    
+  </head>
+  <body style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; background: #f0f1f4; color: #222222; font-family: 'Helvetica', 'Arial', sans-serif; font-size: 16px; font-weight: normal; line-height: 19px; margin: 0; min-width: 100%; padding: 0; text-align: left; width: 100% !important" bgcolor="#f0f1f4">
+<style type="text/css">
+body {
+width: 100% !important; min-width: 100%; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; margin: 0; padding: 0;
+}
+.ExternalClass {
+width: 100%;
+}
+.ExternalClass {
+line-height: 100%;
+}
+#backgroundTable {
+margin: 0; padding: 0; width: 100% !important; line-height: 100% !important;
+}
+img {
+outline: none; text-decoration: none; -ms-interpolation-mode: bicubic; width: auto; max-width: 100%; float: left; clear: both; display: block;
+}
+body {
+color: #222222; font-family: "Helvetica", "Arial", sans-serif; font-weight: normal; padding: 0; margin: 0; text-align: left; line-height: 1.3;
+}
+body {
+font-size: 14px; line-height: 19px;
+}
+a:hover {
+color: #2795b6 !important;
+}
+a:active {
+color: #2795b6 !important;
+}
+a:visited {
+color: #2ba6cb !important;
+}
+h1 a:active {
+color: #2ba6cb !important;
+}
+h2 a:active {
+color: #2ba6cb !important;
+}
+h3 a:active {
+color: #2ba6cb !important;
+}
+h4 a:active {
+color: #2ba6cb !important;
+}
+h5 a:active {
+color: #2ba6cb !important;
+}
+h6 a:active {
+color: #2ba6cb !important;
+}
+h1 a:visited {
+color: #2ba6cb !important;
+}
+h2 a:visited {
+color: #2ba6cb !important;
+}
+h3 a:visited {
+color: #2ba6cb !important;
+}
+h4 a:visited {
+color: #2ba6cb !important;
+}
+h5 a:visited {
+color: #2ba6cb !important;
+}
+h6 a:visited {
+color: #2ba6cb !important;
+}
+table.button:hover td {
+background: #2795b6 !important;
+}
+table.button:visited td {
+background: #2795b6 !important;
+}
+table.button:active td {
+background: #2795b6 !important;
+}
+table.button:hover td a {
+color: #fff !important;
+}
+table.button:visited td a {
+color: #fff !important;
+}
+table.button:active td a {
+color: #fff !important;
+}
+table.button:hover td {
+background: #2795b6 !important;
+}
+table.tiny-button:hover td {
+background: #2795b6 !important;
+}
+table.small-button:hover td {
+background: #2795b6 !important;
+}
+table.medium-button:hover td {
+background: #2795b6 !important;
+}
+table.large-button:hover td {
+background: #2795b6 !important;
+}
+table.button:hover td a {
+color: #ffffff !important;
+}
+table.button:active td a {
+color: #ffffff !important;
+}
+table.button td a:visited {
+color: #ffffff !important;
+}
+table.tiny-button:hover td a {
+color: #ffffff !important;
+}
+table.tiny-button:active td a {
+color: #ffffff !important;
+}
+table.tiny-button td a:visited {
+color: #ffffff !important;
+}
+table.small-button:hover td a {
+color: #ffffff !important;
+}
+table.small-button:active td a {
+color: #ffffff !important;
+}
+table.small-button td a:visited {
+color: #ffffff !important;
+}
+table.medium-button:hover td a {
+color: #ffffff !important;
+}
+table.medium-button:active td a {
+color: #ffffff !important;
+}
+table.medium-button td a:visited {
+color: #ffffff !important;
+}
+table.large-button:hover td a {
+color: #ffffff !important;
+}
+table.large-button:active td a {
+color: #ffffff !important;
+}
+table.large-button td a:visited {
+color: #ffffff !important;
+}
+table.secondary:hover td {
+background: #d0d0d0 !important; color: #555;
+}
+table.secondary:hover td a {
+color: #555 !important;
+}
+table.secondary td a:visited {
+color: #555 !important;
+}
+table.secondary:active td a {
+color: #555 !important;
+}
+table.success:hover td {
+background: #457a1a !important;
+}
+table.alert:hover td {
+background: #970b0e !important;
+}
+body.outlook p {
+display: inline !important;
+}
+body {
+background-color: #f0f1f4; font-family: 'Helvetica', 'Arial', sans-serif; font-size: 16px;
+}
+.footer td a:visited {
+color: #c5c3d0 !important;
+}
+.footer td a:hover {
+color: #c5c3d0 !important;
+}
+table.button:hover td {
+background: #00b671 !important;
+}
+table.button:visited td {
+background: #00b671 !important;
+}
+table.button:active td {
+background: #00b671 !important;
+}
+@media only screen and (max-width: 600px) {
+  table[class="body"] img {
+    width: auto !important; height: auto !important;
+  }
+  table[class="body"] center {
+    min-width: 0 !important;
+  }
+  table[class="body"] .container {
+    width: 95% !important;
+  }
+  table[class="body"] .row {
+    width: 100% !important; display: block !important;
+  }
+  table[class="body"] .wrapper {
+    display: block !important; padding-right: 0 !important;
+  }
+  table[class="body"] .columns {
+    table-layout: fixed !important; float: none !important; width: 100% !important; padding-right: 0px !important; padding-left: 0px !important; display: block !important;
+  }
+  table[class="body"] .column {
+    table-layout: fixed !important; float: none !important; width: 100% !important; padding-right: 0px !important; padding-left: 0px !important; display: block !important;
+  }
+  table[class="body"] .wrapper.first .columns {
+    display: table !important;
+  }
+  table[class="body"] .wrapper.first .column {
+    display: table !important;
+  }
+  table[class="body"] table.columns td {
+    width: 100% !important;
+  }
+  table[class="body"] table.column td {
+    width: 100% !important;
+  }
+  table[class="body"] .columns td.one {
+    width: 8.333333% !important;
+  }
+  table[class="body"] .column td.one {
+    width: 8.333333% !important;
+  }
+  table[class="body"] .columns td.two {
+    width: 16.666666% !important;
+  }
+  table[class="body"] .column td.two {
+    width: 16.666666% !important;
+  }
+  table[class="body"] .columns td.three {
+    width: 25% !important;
+  }
+  table[class="body"] .column td.three {
+    width: 25% !important;
+  }
+  table[class="body"] .columns td.four {
+    width: 33.333333% !important;
+  }
+  table[class="body"] .column td.four {
+    width: 33.333333% !important;
+  }
+  table[class="body"] .columns td.five {
+    width: 41.666666% !important;
+  }
+  table[class="body"] .column td.five {
+    width: 41.666666% !important;
+  }
+  table[class="body"] .columns td.six {
+    width: 50% !important;
+  }
+  table[class="body"] .column td.six {
+    width: 50% !important;
+  }
+  table[class="body"] .columns td.seven {
+    width: 58.333333% !important;
+  }
+  table[class="body"] .column td.seven {
+    width: 58.333333% !important;
+  }
+  table[class="body"] .columns td.eight {
+    width: 66.666666% !important;
+  }
+  table[class="body"] .column td.eight {
+    width: 66.666666% !important;
+  }
+  table[class="body"] .columns td.nine {
+    width: 75% !important;
+  }
+  table[class="body"] .column td.nine {
+    width: 75% !important;
+  }
+  table[class="body"] .columns td.ten {
+    width: 83.333333% !important;
+  }
+  table[class="body"] .column td.ten {
+    width: 83.333333% !important;
+  }
+  table[class="body"] .columns td.eleven {
+    width: 91.666666% !important;
+  }
+  table[class="body"] .column td.eleven {
+    width: 91.666666% !important;
+  }
+  table[class="body"] .columns td.twelve {
+    width: 100% !important;
+  }
+  table[class="body"] .column td.twelve {
+    width: 100% !important;
+  }
+  table[class="body"] td.offset-by-one {
+    padding-left: 0 !important;
+  }
+  table[class="body"] td.offset-by-two {
+    padding-left: 0 !important;
+  }
+  table[class="body"] td.offset-by-three {
+    padding-left: 0 !important;
+  }
+  table[class="body"] td.offset-by-four {
+    padding-left: 0 !important;
+  }
+  table[class="body"] td.offset-by-five {
+    padding-left: 0 !important;
+  }
+  table[class="body"] td.offset-by-six {
+    padding-left: 0 !important;
+  }
+  table[class="body"] td.offset-by-seven {
+    padding-left: 0 !important;
+  }
+  table[class="body"] td.offset-by-eight {
+    padding-left: 0 !important;
+  }
+  table[class="body"] td.offset-by-nine {
+    padding-left: 0 !important;
+  }
+  table[class="body"] td.offset-by-ten {
+    padding-left: 0 !important;
+  }
+  table[class="body"] td.offset-by-eleven {
+    padding-left: 0 !important;
+  }
+  table[class="body"] table.columns td.expander {
+    width: 1px !important;
+  }
+  table[class="body"] .right-text-pad {
+    padding-left: 10px !important;
+  }
+  table[class="body"] .text-pad-right {
+    padding-left: 10px !important;
+  }
+  table[class="body"] .left-text-pad {
+    padding-right: 10px !important;
+  }
+  table[class="body"] .text-pad-left {
+    padding-right: 10px !important;
+  }
+  table[class="body"] .hide-for-small {
+    display: none !important;
+  }
+  table[class="body"] .show-for-desktop {
+    display: none !important;
+  }
+  table[class="body"] .show-for-small {
+    display: inherit !important;
+  }
+  table[class="body"] .hide-for-desktop {
+    display: inherit !important;
+  }
+  .global-wrapper {
+    padding-top: 10px;
+  }
+  table.columns .text-pad {
+    padding-left: 10px; padding-right: 10px;
+  }
+  table.column .text-pad {
+    padding-left: 10px; padding-right: 10px;
+  }
+  .footer td.wrapper {
+    padding: 0;
+  }
+  #avatar {
+    width: 20.68966% !important;
+  }
+  #twitter-user {
+    width: 79.31034% !important;
+  }
+  #time {
+    padding-right: 10px;
+  }
+  #time-mobile .time {
+    padding: 0px 10px 0px 30px;
+  }
+  table.row.divider .wrapper {
+    padding-top: 0px;
+  }
+  table.row.divider .wrapper .text-pad-left {
+    padding-left: 10px;
+  }
+  td.wrapper.customer-info {
+    padding-left: 10px;
+  }
+  table.row.chat-container td.wrapper {
+    padding-right: 30px !important;
+  }
+}
+</style>
+    <header>
+      <h1 class="title" style="color: #222222; font-family: 'Helvetica', 'Arial', sans-serif; font-size: 40px; font-weight: normal; line-height: 1.3; margin: 0; padding: 0; text-align: left; word-break: normal" align="left">jink</h1>
+      <h2 class="subtitle" style="color: #222222; font-family: 'Helvetica', 'Arial', sans-serif; font-size: 36px; font-weight: normal; line-height: 1.3; margin: 0; padding: 0; text-align: left; word-break: normal" align="left">easier, jadier <a href="" style="color: #2ba6cb; text-decoration: none">Ink</a>
+</h2>
+    </header>
+    <div role="main" class="content-wrapper">
+      <div class="note">
+<p style="color: #222222; font-family: 'Helvetica', 'Arial', sans-serif; font-size: 14px; font-weight: normal; line-height: 19px; margin: 0 0 10px; padding: 0; text-align: left" align="left">Jink is an abstraction on <a href="http://zurb.com/ink/" style="color: #2ba6cb; text-decoration: none">Ink</a> authored in <a href="http://jade-lang.com" style="color: #2ba6cb; text-decoration: none">Jade</a>
+, you <strong>must go through</strong> Ink's <a href="http://zurb.com/ink/docs.php" style="color: #2ba6cb; text-decoration: none">documentation</a> to understand 
+the modules. Jink is a one-on-one mapping to Ink, written in Jade. Understanding Ink and writing markup with jade is a <em>pre-requisite</em> for using Jink.</p>
+<p style="color: #222222; font-family: 'Helvetica', 'Arial', sans-serif; font-size: 14px; font-weight: normal; line-height: 19px; margin: 0 0 10px; padding: 0; text-align: left" align="left">Jink also attempts to be a workflow for hand-crafting email templates. Right now, it includes a <a href="https://github.com/dwightjack/grunt-premailer" style="color: #2ba6cb; text-decoration: none">grunt task</a>
+which inlines the associated styles using <a href="http://premailer.dialect.ca" style="color: #2ba6cb; text-decoration: none">Premailer</a> but we look forward to add more tasks which takes off the load.</p>
+
+      </div>
+      <section class="intro">
+        <h3 class="topic-title" style="color: #222222; font-family: 'Helvetica', 'Arial', sans-serif; font-size: 32px; font-weight: normal; line-height: 1.3; margin: 0; padding: 0; text-align: left; word-break: normal" align="left">Introduction</h3>
+        <div class="example">
+          <div class="explain">
+<p style="color: #222222; font-family: 'Helvetica', 'Arial', sans-serif; font-size: 14px; font-weight: normal; line-height: 19px; margin: 0 0 10px; padding: 0; text-align: left" align="left">As email templates are built using nested table structures, even simpler Ink modules adds up
+to a nested tags disaster.</p>
+<p style="color: #222222; font-family: 'Helvetica', 'Arial', sans-serif; font-size: 14px; font-weight: normal; line-height: 19px; margin: 0 0 10px; padding: 0; text-align: left" align="left">And on top of that, with Ink you have to remember the elements on which you have to apply 
+the helper classes</p>
+<p style="color: #222222; font-family: 'Helvetica', 'Arial', sans-serif; font-size: 14px; font-weight: normal; line-height: 19px; margin: 0 0 10px; padding: 0; text-align: left" align="left">Jink abstracts the html structure provided by Ink and expresses everything in 
+terms of Ink's modules like <code>container</code>, <code>row</code>, <code>columns</code>, <code>sub-columns</code>, <code>block-grid</code>, 
+and <code>buttons</code>.</p>
+<p style="color: #222222; font-family: 'Helvetica', 'Arial', sans-serif; font-size: 14px; font-weight: normal; line-height: 19px; margin: 0 0 10px; padding: 0; text-align: left" align="left">Here is Ink's basic manifesto.</p>
+
+          </div>
+          <div class="quote">
+<h4 id="structure" style="color: #222222; font-family: 'Helvetica', 'Arial', sans-serif; font-size: 28px; font-weight: normal; line-height: 1.3; margin: 0; padding: 0; text-align: left; word-break: normal" align="left">Structure</h4>
+<p style="color: #222222; font-family: 'Helvetica', 'Arial', sans-serif; font-size: 14px; font-weight: normal; line-height: 19px; margin: 0 0 10px; padding: 0; text-align: left" align="left">Ink uses a <strong>12-column</strong> grid with a <strong>580px</strong> wrapper. On mobile devices (under 580px wide), columns become full width and stack vertically.</p>
+<p style="color: #222222; font-family: 'Helvetica', 'Arial', sans-serif; font-size: 14px; font-weight: normal; line-height: 19px; margin: 0 0 10px; padding: 0; text-align: left" align="left">Ink's grid can be thought of in terms of three components:</p>
+<h4 id="containers" style="color: #222222; font-family: 'Helvetica', 'Arial', sans-serif; font-size: 28px; font-weight: normal; line-height: 1.3; margin: 0; padding: 0; text-align: left; word-break: normal" align="left">Containers</h4>
+<p style="color: #222222; font-family: 'Helvetica', 'Arial', sans-serif; font-size: 14px; font-weight: normal; line-height: 19px; margin: 0 0 10px; padding: 0; text-align: left" align="left">Ink containers wrap the content and maintain a fixed, 580px layout on large displays. Below 580px, containers take up 95% of the screen's width, ensuring that your content doesn't run right up against the edges of the user's screen.</p>
+<h4 id="rows" style="color: #222222; font-family: 'Helvetica', 'Arial', sans-serif; font-size: 28px; font-weight: normal; line-height: 1.3; margin: 0; padding: 0; text-align: left; word-break: normal" align="left">Rows</h4>
+<p style="color: #222222; font-family: 'Helvetica', 'Arial', sans-serif; font-size: 14px; font-weight: normal; line-height: 19px; margin: 0 0 10px; padding: 0; text-align: left" align="left">Rows are used to separate blocks of content vertically. In addition to the vertical separation, the </p>
+<td style="-moz-hyphens: auto; -webkit-hyphens: auto; border-collapse: collapse !important; color: #222222; font-family: 'Helvetica', 'Arial', sans-serif; font-size: 14px; font-weight: normal; hyphens: auto; line-height: 19px; margin: 0; padding: 0; text-align: left; vertical-align: top; word-break: break-word" align="left" valign="top"> tags of .row tables use the wrapper class to maintain a gutter between columns. Note: the last .wrapper </td>
+<td style="-moz-hyphens: auto; -webkit-hyphens: auto; border-collapse: collapse !important; color: #222222; font-family: 'Helvetica', 'Arial', sans-serif; font-size: 14px; font-weight: normal; hyphens: auto; line-height: 19px; margin: 0; padding: 0; text-align: left; vertical-align: top; word-break: break-word" align="left" valign="top"> in a row MUST have a class of .last applied to it, even if it's the only wrapper in the row (ex. for a row with a single, twelve-column wide content area).
+<h4 id="columns" style="color: #222222; font-family: 'Helvetica', 'Arial', sans-serif; font-size: 28px; font-weight: normal; line-height: 1.3; margin: 0; padding: 0; text-align: left; word-break: normal" align="left">Columns</h4>
+<p style="color: #222222; font-family: 'Helvetica', 'Arial', sans-serif; font-size: 14px; font-weight: normal; line-height: 19px; margin: 0 0 10px; padding: 0; text-align: left" align="left">Columns denote the width of the content, as based on a 12-column system. The content inside them will expand to cover n-columns, assuming that the number of columns in one row adds up to 12.</p>
+
+          
+          <div class="explain">
+            <p style="color: #222222; font-family: 'Helvetica', 'Arial', sans-serif; font-size: 14px; font-weight: normal; line-height: 19px; margin: 0 0 10px; padding: 0; text-align: left" align="left">Lets look at a basic example.</p>
+          </div>
+          <div class="example-demo">
+            <table class="container" style="background: #ffffff; border-collapse: collapse; border-spacing: 0; border: 1px solid #e4e3eb; margin: 0 auto; padding: 0; text-align: inherit; vertical-align: top; width: 580px" bgcolor="#ffffff">
+              <tr style="padding: 0; text-align: left; vertical-align: top" align="left">
+                <td style="-moz-hyphens: auto; -webkit-hyphens: auto; border-collapse: collapse !important; color: #222222; font-family: 'Helvetica', 'Arial', sans-serif; font-size: 14px; font-weight: normal; hyphens: auto; line-height: 19px; margin: 0; padding: 0; text-align: left; vertical-align: top; word-break: break-word" align="left" valign="top">
+                  <table class="row" style="border-collapse: collapse; border-spacing: 0; display: block; padding: 0px; position: relative; text-align: left; vertical-align: top; width: 100%">
+                    <tr style="padding: 0; text-align: left; vertical-align: top" align="left">
+                      <td class="wrapper bordered" style="-moz-hyphens: auto; -webkit-hyphens: auto; border-collapse: collapse !important; color: #222222; font-family: 'Helvetica', 'Arial', sans-serif; font-size: 14px; font-weight: normal; hyphens: auto; line-height: 19px; margin: 0; padding: 10px 20px 0px 0px; position: relative; text-align: left; vertical-align: top; word-break: break-word" align="left" valign="top">
+                        <table class="columns eight" style="border-collapse: collapse; border-spacing: 0; margin: 0 auto; padding: 0; text-align: left; vertical-align: top; width: 380px">
+                          <tr style="padding: 0; text-align: left; vertical-align: top" align="left">
+                            <td class="text-pad" style="-moz-hyphens: auto; -webkit-hyphens: auto; border-collapse: collapse !important; color: #222222; font-family: 'Helvetica', 'Arial', sans-serif; font-size: 14px; font-weight: normal; hyphens: auto; line-height: 19px; margin: 0; padding: 0px 30px 10px; text-align: left; vertical-align: top; word-break: break-word" align="left" valign="top">Eight Columns</td>
+                            <td class="expander" style="-moz-hyphens: auto; -webkit-hyphens: auto; border-collapse: collapse !important; color: #222222; font-family: 'Helvetica', 'Arial', sans-serif; font-size: 14px; font-weight: normal; hyphens: auto; line-height: 19px; margin: 0; padding: 0; text-align: left; vertical-align: top; visibility: hidden; width: 0px; word-break: break-word" align="left" valign="top"></td>
+                          </tr>
+                        </table>
+                      </td>
+                      <td class="wrapper last bordered" style="-moz-hyphens: auto; -webkit-hyphens: auto; border-collapse: collapse !important; color: #222222; font-family: 'Helvetica', 'Arial', sans-serif; font-size: 14px; font-weight: normal; hyphens: auto; line-height: 19px; margin: 0; padding: 10px 0px 0px; position: relative; text-align: left; vertical-align: top; word-break: break-word" align="left" valign="top">
+                        <table class="columns four" style="border-collapse: collapse; border-spacing: 0; margin: 0 auto; padding: 0; text-align: left; vertical-align: top; width: 180px">
+                          <tr style="padding: 0; text-align: left; vertical-align: top" align="left">
+                            <td class="text-pad" style="-moz-hyphens: auto; -webkit-hyphens: auto; border-collapse: collapse !important; color: #222222; font-family: 'Helvetica', 'Arial', sans-serif; font-size: 14px; font-weight: normal; hyphens: auto; line-height: 19px; margin: 0; padding: 0px 30px 10px; text-align: left; vertical-align: top; word-break: break-word" align="left" valign="top">Four Columns</td>
+                            <td class="expander" style="-moz-hyphens: auto; -webkit-hyphens: auto; border-collapse: collapse !important; color: #222222; font-family: 'Helvetica', 'Arial', sans-serif; font-size: 14px; font-weight: normal; hyphens: auto; line-height: 19px; margin: 0; padding: 0; text-align: left; vertical-align: top; visibility: hidden; width: 0px; word-break: break-word" align="left" valign="top"></td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+            </table>
+          </div>
+          <pre class="jink-code"><code>+container()
+  +row()
+    +columns('eight')
+      td Eight Columns
+    +columns('four', 'last')
+      td Four Columns
+      </code></pre>
+          <div class="explain">
+<p style="color: #222222; font-family: 'Helvetica', 'Arial', sans-serif; font-size: 14px; font-weight: normal; line-height: 19px; margin: 0 0 10px; padding: 0; text-align: left" align="left">Jink uses <a href="http://jade-lang.com/" style="color: #2ba6cb; text-decoration: none">jade</a> mixins to reuse the HTML structures that
+makes up an Ink module.</p>
+<p style="color: #222222; font-family: 'Helvetica', 'Arial', sans-serif; font-size: 14px; font-weight: normal; line-height: 19px; margin: 0 0 10px; padding: 0; text-align: left" align="left">This effort attempts to minimize authoring of markup that doesn't describe your 
+content.</p>
+<p style="color: #222222; font-family: 'Helvetica', 'Arial', sans-serif; font-size: 14px; font-weight: normal; line-height: 19px; margin: 0 0 10px; padding: 0; text-align: left" align="left">The above jink markup expands to the markup below. Jink already takes care of applying 
+the proper helper classes to any <code>&lt;td&gt;</code> or <code>&lt;table&gt;</code> if required and maintaining the HTML structure.</p>
+
+          </div>
+          <pre class="ink-code"><code><pre><code class="lang-html">  &lt;table class="container"&gt;
+    &lt;tr&gt;
+      &lt;td&gt;
+        &lt;table class="row"&gt;
+          &lt;tr&gt;
+            &lt;td class="wrapper"&gt;
+              &lt;table class="eight columns"&gt;
+                &lt;tr&gt;
+                  &lt;td&gt;
+                    Eight Columns
+                  &lt;/td&gt;
+                  &lt;td class="expander"&gt;&lt;/td&gt;
+                &lt;/tr&gt;
+              &lt;/table&gt;
+            &lt;/td&gt;
+            &lt;td class="wrapper last"&gt;
+
+              &lt;table class="four columns"&gt;
+                &lt;tr&gt;
+                  &lt;td&gt;
+                    Four Columns
+                  &lt;/td&gt;
+                  &lt;td class="expander"&gt;&lt;/td&gt;
+                &lt;/tr&gt;
+              &lt;/table&gt;
+            &lt;/td&gt;
+          &lt;/tr&gt;
+        &lt;/table&gt;
+      &lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/table&gt;
+</code></pre>
+</code></pre>
+        
+      
+      <section class="reference">
+        <h3 class="topic-title" style="color: #222222; font-family: 'Helvetica', 'Arial', sans-serif; font-size: 32px; font-weight: normal; line-height: 1.3; margin: 0; padding: 0; text-align: left; word-break: normal" align="left">Reference</h3>
+        <div class="explain">
+<p style="color: #222222; font-family: 'Helvetica', 'Arial', sans-serif; font-size: 14px; font-weight: normal; line-height: 19px; margin: 0 0 10px; padding: 0; text-align: left" align="left">Every module in Jink is a <a href="http://jade-lang.com/reference/#mixins" style="color: #2ba6cb; text-decoration: none">jade mixin</a>.
+You insert(indent) the desired content inside the mixin.</p>
+<h4 id="-container-" style="color: #222222; font-family: 'Helvetica', 'Arial', sans-serif; font-size: 28px; font-weight: normal; line-height: 1.3; margin: 0; padding: 0; text-align: left; word-break: normal" align="left">+container( )</h4>
+<p style="color: #222222; font-family: 'Helvetica', 'Arial', sans-serif; font-size: 14px; font-weight: normal; line-height: 19px; margin: 0 0 10px; padding: 0; text-align: left" align="left">Similar to Ink's <code>container</code> module. Indents all the rows under it.
+If you want to add a custom class to it, pass it as an attribute to the 
+jade mixin.</p>
+
+          <pre class="jink-code"><code>+container()(class="newsletter")
+</code></pre>
+        </div>
+        <div class="explain">
+<p style="color: #222222; font-family: 'Helvetica', 'Arial', sans-serif; font-size: 14px; font-weight: normal; line-height: 19px; margin: 0 0 10px; padding: 0; text-align: left" align="left">compiles to </p>
+
+        </div>
+        <pre class="ink-code"><pre><code class="lang-html">&lt;table class="container"&gt;
+  &lt;tr&gt;
+    &lt;td&gt;
+      [Content Goes Here]
+    &lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/table&gt;
+</code></pre>
+</pre>
+        <div class="explain">
+<h4 id="-row-" style="color: #222222; font-family: 'Helvetica', 'Arial', sans-serif; font-size: 28px; font-weight: normal; line-height: 1.3; margin: 0; padding: 0; text-align: left; word-break: normal" align="left">+row( )</h4>
+<p style="color: #222222; font-family: 'Helvetica', 'Arial', sans-serif; font-size: 14px; font-weight: normal; line-height: 19px; margin: 0 0 10px; padding: 0; text-align: left" align="left">Same as Ink's <code>row</code>. Indents all the columns under it.
+If you want to add a custom class to it, pass it as an attribute to the 
+jade mixin.</p>
+
+          <pre class="jink-code"><code>+row()(class="happy-news")
+</code></pre>
+        </div>
+        <div class="explain">
+<p style="color: #222222; font-family: 'Helvetica', 'Arial', sans-serif; font-size: 14px; font-weight: normal; line-height: 19px; margin: 0 0 10px; padding: 0; text-align: left" align="left">compiles to </p>
+
+        </div>
+        <pre class="ink-code"><pre><code class="lang-html">&lt;table class="row"&gt;
+  &lt;tr&gt;
+    [Content Goes Here]
+  &lt;/tr&gt;
+&lt;/table&gt;
+</code></pre>
+</pre>
+        <div class="explain">
+<h4 id="-columns-" style="color: #222222; font-family: 'Helvetica', 'Arial', sans-serif; font-size: 28px; font-weight: normal; line-height: 1.3; margin: 0; padding: 0; text-align: left; word-break: normal" align="left">+columns( )</h4>
+<p style="color: #222222; font-family: 'Helvetica', 'Arial', sans-serif; font-size: 14px; font-weight: normal; line-height: 19px; margin: 0 0 10px; padding: 0; text-align: left" align="left">Same as Ink's <code>columns</code>. Indent the content under it.</p>
+<p style="color: #222222; font-family: 'Helvetica', 'Arial', sans-serif; font-size: 14px; font-weight: normal; line-height: 19px; margin: 0 0 10px; padding: 0; text-align: left" align="left">Content in a column should be enclosed within a <code>&lt;td&gt;</code> element.</p>
+<p style="color: #222222; font-family: 'Helvetica', 'Arial', sans-serif; font-size: 14px; font-weight: normal; line-height: 19px; margin: 0 0 10px; padding: 0; text-align: left" align="left">Column is the most elementary unit in the grid system. You can have 
+multiple columns inside a row.</p>
+<p style="color: #222222; font-family: 'Helvetica', 'Arial', sans-serif; font-size: 14px; font-weight: normal; line-height: 19px; margin: 0 0 10px; padding: 0; text-align: left" align="left">To indicate the number of grids a column covers, you have to apply a class
+on the enclosing <code>&lt;table&gt;</code> element which represents a column.</p>
+<p style="color: #222222; font-family: 'Helvetica', 'Arial', sans-serif; font-size: 14px; font-weight: normal; line-height: 19px; margin: 0 0 10px; padding: 0; text-align: left" align="left">But <em>with Jink</em>, you pass in the class name as the first parameter
+to the column mixin.</p>
+<p style="color: #222222; font-family: 'Helvetica', 'Arial', sans-serif; font-size: 14px; font-weight: normal; line-height: 19px; margin: 0 0 10px; padding: 0; text-align: left" align="left">The class can be any number from <strong>one</strong> to <strong>twelve</strong> expressed in words.</p>
+
+          <pre class="jink-code"><code>+columns('twelve')
+  td
+    h1 We are celebrating just like that
+    p 
+      | So, you everything you buy is 
+      | free for a limited time
+      | because celebration can't last forever.
+      
+      </code>
+            <you>can use helper classes provided by Ink on td elemement inside a column.</you>
+            <pre class="jink-code"><code>+container()(class="happy-news")
+</code></pre>
+            <if>you want to add a custom class to it, pass it as an attribute to the </if>
+            <jade>mixin.</jade></pre>
+          <pre class="jink-code"><code>+container()(class="happy-news")
+</code></pre>
+        </div>
+        <div class="explain">
+<p style="color: #222222; font-family: 'Helvetica', 'Arial', sans-serif; font-size: 14px; font-weight: normal; line-height: 19px; margin: 0 0 10px; padding: 0; text-align: left" align="left">compiles to </p>
+
+        </div>
+        <pre class="ink-code"><pre><code class="lang-html">&lt;table class="row"&gt;
+  &lt;tr&gt;
+    [Content Goes Here]
+  &lt;/tr&gt;
+&lt;/table&gt;
+</code></pre>
+</pre>
+      </section>
+    
+  </td>
+</div>
+</div></section>
+</div>
+</body>
+</html>

@@ -1,0 +1,31 @@
+extends ../src/includes/layout
+
+block body
+  +container()(class="example-wrapper")
+    
+    +row()
+      +columns('twelve', 'last image-wrapper')
+        td.center
+          img.center(src="https://db.tt/INvt3MHn")
+
+    +row()
+      
+      +columns('six')
+        td.text-pad
+          p.example-two.message
+            | Airwoot, a startup that helps brands provide customer support on 
+            | social media. Airwoot has built a next generation real-time customer 
+            | support using the sophisticated filtering and priority engine 
+            | that separates social chatter from relevant support queries.
+
+      +columns('five', 'last quote-wrapper')
+        td.text-pad.panel.quote
+          p 
+            | The next-gen customers are highly opinionated, always on the go
+            | and ever connected. Through social media they can reach out to 
+            | a brand anytime, anywhere.
+
+    +row()(class="button-wrapper")
+      +columns ('six', 'last')
+        td.text-pad
+          +button("Learn More")(style="large-button radius")

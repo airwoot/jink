@@ -1,0 +1,60 @@
+mixin container()
+  table.container(class!=attributes.class)
+    tr
+      td
+        if block
+          block
+
+mixin row()
+  table.row(class!=attributes.class)
+    tr
+      if block
+        block
+
+
+//- the columns mixin takes in the 
+//- the number of columns and 
+//- the name of the classes(space sepertaed)
+//- to be applied on the `wrapper` of the column
+
+mixin columns(number, wrapperClasses)
+  - var wrapperClasses = wrapperClasses ? wrapperClasses : ''
+  - var columnClass = number + (attributes.visibility ? ' ' + attributes.visibility: '')
+
+  td.wrapper(class=wrapperClasses)
+    - if (attributes.visibility === "show-for-small")
+      // [if !mso]><!-- 
+    table.columns(class!= columnClass)
+      tr
+        if block
+          block
+        td.expander
+    - if (attributes.visibility === "show-for-small")
+      // <![endif]
+
+
+
+mixin fullWidthRow()
+  +row()
+    td.center(align="center")
+      center
+        +container
+          +columns('tweleve', 'last') 
+            if block
+              block
+            td.expander
+
+
+mixin blockGrid(number)
+  - var grid = "block-grid " + number + '-up'
+    table(class=grid)
+      tr
+        if block
+          block
+
+
+mixin button(label)
+  table.button(class!=(attributes.style ? attributes.style : ''))
+    tr
+      td
+        a= label
