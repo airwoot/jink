@@ -2,8 +2,16 @@
   "name": "jink",
   "version": "0.0.1",
   "description": "",
-  "main": "Gruntfile.js",
-  "dependencies": {
+  "main": "build/index.html",
+  "dependencies": {},
+  "keywords": [
+    "template",
+    "email",
+    "ink",
+    "jade"
+  ],
+  "engines": {
+    "node": ">=0.10.0"
   },
   "devDependencies": {
     "grunt": "~0.4.2",
@@ -12,7 +20,8 @@
     "grunt-contrib-jade": "0.11.0",
     "grunt-contrib-watch": "~0.5.3",
     "marked": "~0.3.2",
-    "grunt-premailer": "~0.2.4"
+    "grunt-premailer": "~0.2.4",
+    "grunt-git-contributors": "~0.1.5"
   },
   "scripts": {
     "test": ""

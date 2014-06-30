@@ -578,6 +578,10 @@ block body
 -  Add more higher level Jade Mixins
 -  Add further resources to enhance HTML Email
 
+## License
+MIT 
+Copyright 2014 Airwoot
+
 
 
 

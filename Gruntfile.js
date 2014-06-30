@@ -80,6 +80,14 @@ module.exports = function (grunt) {
                     }
                 ]
             }
+        },
+
+        "contributors": {
+          master: {
+            path: './CONTRIBUTORS.md',
+            branch: 'master',
+            chronologically: false
+          }
         }
 
     });
@@ -90,8 +98,10 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks('grunt-contrib-watch');
     grunt.loadNpmTasks('grunt-premailer');
     grunt.loadNpmTasks('grunt-contrib-connect');
+    grunt.loadNpmTasks('grunt-git-contributors');
 
     // Custom Tasks
     grunt.registerTask('default', ["connect", "watch"]);
     grunt.registerTask('inline', ["premailer"]);
+    grunt.registerTask('buildContributors', ["contributors:master"]);
 };
